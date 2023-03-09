@@ -25,10 +25,10 @@ SECRET_KEY = "hbsdyuhuisdhuh7y7723y7u88iioj@$^#&YO*&()*U*UGYKYTDESXfchbguYGT%R$%
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost','tracer.skolo.online','127.0.0.1']
+ALLOWED_HOSTS = ['.vercel.app','.now.sh','127.0.0.1']
 
 
-# Application definition
+# Application definition 
 
 INSTALLED_APPS = [
     "django.contrib.admin",
