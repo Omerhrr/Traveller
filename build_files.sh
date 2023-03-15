@@ -2,7 +2,7 @@
 echo "Building new project"
 echo "Installing Requirements"
 
-python3.11.1 -m pip install -r requirements.txt 
+python -m pip install -r requirements.txt 
 
 
 echo "Making Migrations"
