@@ -26,7 +26,7 @@ SECRET_KEY = "hbsdyuhuisdhuh7y7723y7u88iioj@$^#&YO*&()*U*UGYKYTDESXfchbguYGT%R$%
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app','.now.sh','127.0.0.1']
+ALLOWED_HOSTS = ['.vercel.app','.now.sh','127.0.0.1','192.168.86.223']
 
 
 # Application definition 
@@ -76,24 +76,24 @@ WSGI_APPLICATION = "message.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
-    }
-}
 # DATABASES = {
 #     "default": {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': 'message',
-#         'USER': 'postgres',
-#         'PASSWORD': '0789',
-#         'HOST': 'localhost',
-#         'PORT': '',
+#         "ENGINE": "django.db.backends.sqlite3",
+#         "NAME": BASE_DIR / "db.sqlite3",
 #     }
-
-
 # }
+DATABASES = {
+    "default": {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'message',
+        'USER': 'root',
+        'PASSWORD': '',
+        'HOST': 'localhost',
+        'PORT': '',
+    }
+
+
+}
 # DATABASES['default'] = dj_database_url.config()
 
 
@@ -154,3 +154,6 @@ DEFAULT_FROM_EMAIL = 'pyumarpy@gmail.com'
 
 LOGIN_REDIRECT_URL = 'dashboard'
 LOGIN_URL = 'login'
+
+WHATSAPP_TOKEN = ""
+WHATSAPP_URL = "Bearer  "
